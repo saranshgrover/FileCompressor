@@ -5,34 +5,7 @@
 #include "huff.h"
 #include "debug.h"
 
-#ifdef _STRING_H
-#error "Do not #include <string.h>. You will get a ZERO."
-#endif
 
-#ifdef _STRINGS_H
-#error "Do not #include <strings.h>. You will get a ZERO."
-#endif
-
-#ifdef _CTYPE_H
-#error "Do not #include <ctype.h>. You will get a ZERO."
-#endif
-
-/*
- * You may modify this file and/or move the functions contained here
- * to other source files (except for main.c) as you wish.
- *
- * IMPORTANT: You MAY NOT use any array brackets (i.e. [ and ]) and
- * you MAY NOT declare any arrays or allocate any storage with malloc().
- * The purpose of this restriction is to force you to use pointers.
- * Variables to hold the nodes of the Huffman tree and other data have
- * been pre-declared for you in const.h.
- * You must use those variables, rather than declaring your own.
- * IF YOU VIOLATE THIS RESTRICTION, YOU WILL GET A ZERO!
- *
- * IMPORTANT: You MAY NOT use floating point arithmetic or declare
- * any "float" or "double" variables.  IF YOU VIOLATE THIS RESTRICTION,
- * YOU WILL GET A ZERO!
- */
 int block_counter = 0;
 int global_counter = 0;
 int output = 0;
@@ -795,5 +768,3 @@ int validargs(int argc, char **argv)
     }
         return EXIT_FAILURE;
 }
-
-
